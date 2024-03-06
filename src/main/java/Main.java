@@ -1,11 +1,14 @@
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
 /**
  * Created by iyasuwatts on 10/17/17.
  * Modified by kristofer in Jan 2024
  */
-public class Main {
+public class  Main {
 
     public static void main(String[] args){
-        
+
         int number = getInputNumber();
         
         int sum = sumOfNumbers(number);
@@ -16,12 +19,17 @@ public class Main {
     
     // do this one and the lab is complete. really.
     // return the sum of 0 to n... if n == 3, the result should be 6
-    int sumOfNumbers(int n) {
-        return 0;
+    public static int sumOfNumbers(int n) {
+        int result = 0;
+        for(int i = 0; i <= n; i++){
+        result += i;
+
+        }
+        return result;
     }
     
     
-    int getInputNumber() { // gee, may thi sis useful in another lab?
+    public static int getInputNumber() { // gee, may thi sis useful in another lab?
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter any number: ");
 
